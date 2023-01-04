@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            string s = $"Directeur[ Id : {DirecteurId}, name : {Name}, DepartementId : {DepartementId}]";
+            string s = $"Directeur[ Id : {DirecteurId}, name : {Name}, DepartementId : {DepartementId}, IdentityUserId : {IdentityUserId}]";
             return s;
         }
     }

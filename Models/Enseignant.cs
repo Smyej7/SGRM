@@ -15,7 +15,7 @@
 
         public override string ToString()
         {
-            string s = $"Enseignant[ Id : {EnseignantId}, name : {Name}, DepartementId : {DepartementId}]";
+            string s = $"Enseignant[ Id : {EnseignantId}, name : {Name}, DepartementId : {DepartementId}, IdentityUserId : {IdentityUserId}]";
             return s;
         }
     }
