@@ -1,16 +1,19 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SGRM.Data;
+using Microsoft.AspNetCore.Authorization;
+//using ContactManager.Authorization;
 
+#region snippet3
+#region snippet2
+#region snippet
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(connectionString));
-
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // Add Role services to Identity (view in ressources)
@@ -18,6 +21,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(
     options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+#endregion
 
 builder.Services.AddRazorPages();
 
@@ -28,9 +32,22 @@ builder.Services.AddAuthorization(options =>
         .RequireAuthenticatedUser()
         .Build();
 });
+#endregion
+
+/*
+// Authorization handlers.
+builder.Services.AddScoped<IAuthorizationHandler,
+                      ContactIsOwnerAuthorizationHandler>();
+
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      ContactAdministratorsAuthorizationHandler>();
+
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      ContactManagerAuthorizationHandler>();
+*/
 
 var app = builder.Build();
-/*
+
 // Configure the test account (view in ressources)
 using (var scope = app.Services.CreateScope())
 {
@@ -43,17 +60,19 @@ using (var scope = app.Services.CreateScope())
 
     //var testUserPw = builder.Configuration.GetValue<string>("SeedUserPW");
     var testUserPw = "Passw0rd!";
-
     await SeedData.Initialize(services, testUserPw);
 }
-*/
+/*
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
-    SeedData.Initialize2(services);
+    SeedData.Initialize(services);
 }
+*/
+#endregion
 
+# region last_region
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -71,8 +90,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapRazorPages();
 
 app.Run();
+#endregion

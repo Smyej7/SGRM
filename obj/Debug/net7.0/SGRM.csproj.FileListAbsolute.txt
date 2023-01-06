@@ -46,12 +46,7 @@ C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressour
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\obj\Debug\net7.0\SGRM.csproj.AssemblyReference.cache
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\obj\Debug\net7.0\SGRM.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\obj\Debug\net7.0\SGRM.AssemblyInfoInputs.cache
@@ -77,3 +72,8 @@ C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressour
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\obj\Debug\net7.0\SGRM.pdb
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\obj\Debug\net7.0\SGRM.genruntimeconfig.cache
 C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\obj\Debug\net7.0\ref\SGRM.dll
+C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DCNTD\Documents\4annee\Genie Logiciel\TPs\Systeme de gestion de ressources materielles\finalApp\SGRM\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

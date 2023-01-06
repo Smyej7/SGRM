@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SGRM.Pages;
+
+[AllowAnonymous]
 
 public class IndexModel : PageModel
 {

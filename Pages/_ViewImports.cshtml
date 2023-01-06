@@ -3,3 +3,7 @@
 @using SGRM.Data
 @namespace SGRM.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using SGRM.Authorization;
+@using Microsoft.AspNetCore.Authorization
+@using SGRM.Models
+@inject IAuthorizationService AuthorizationService

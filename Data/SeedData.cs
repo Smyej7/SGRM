@@ -19,12 +19,12 @@ namespace SGRM.Data
                 // Password is set with the following:
                 // dotnet user-secrets set SeedUserPW <pw>
                 // The admin user can do anything
-
-                var adminID = await EnsureUser(serviceProvider, testUserPw, "responsable@fake.com");
+                
+                var adminID = await EnsureUser(serviceProvider, testUserPw, "admin@fake.com");
                 await EnsureRole(serviceProvider, adminID, Constants.ResponsableRole);
 
                 // allowed user can create and edit contacts that they create
-                var managerID = await EnsureUser(serviceProvider, testUserPw, "directeur@fake.com");
+                var managerID = await EnsureUser(serviceProvider, testUserPw, "manager@fake.com");
                 await EnsureRole(serviceProvider, managerID, Constants.DirecteurRole);
 
                 SeedDB(context);
@@ -91,7 +91,7 @@ namespace SGRM.Data
         }
         #endregion
 
-        public static void Initialize2(IServiceProvider serviceProvider)
+        public static void Initialize(IServiceProvider serviceProvider)
         {
             using (var context = new ApplicationDbContext(
                 serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>()))
@@ -99,35 +99,29 @@ namespace SGRM.Data
                 SeedDB(context);
             }
         }
+
         public static void SeedDB(ApplicationDbContext context)
         {
-            if (context.Enseignants.Any())
+            if (context.Departements.Any())
             {
-                context.Enseignants.ToList().ForEach(Console.WriteLine);
+                return;   // DB has been seeded
             }
-            if (context.Directeurs.Any())
-            {
-                context.Directeurs.ToList().ForEach(Console.WriteLine);
-            }
-            /*
-            context.Directeurs.AddRange(
-                new Directeur
-                {
-                    Name = "DIR samir",
-                    //IdentityUserId = "8a4a005f-e271-4f5c-bd03-352ef288c655"
-                }
-            );
-            context.SaveChanges();
 
-            context.Enseignants.AddRange(
-                new Enseignant
+            context.Departements.AddRange(
+                new Departement
                 {
-                    Name = "PROF karim",
-                    //IdentityUserId = "8a4a005f-e271-4f5c-bd03-352ef288c655"
+                    Name = "dept 1"
+                },
+                new Departement
+                {
+                    Name = "dept 2"
+                },
+                new Departement
+                {
+                    Name = "dept 3"
                 }
             );
             context.SaveChanges();
-            */
         }
     }
 }
