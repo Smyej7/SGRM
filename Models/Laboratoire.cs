@@ -6,10 +6,10 @@
 
         public string Name { get; set; }
 
-        public int? DepartementId { get; set; }
-        public Departement? Departement { get; set; }
+        public int DepartementId { get; set; }
+        public Departement Departement { get; set; }
 
-        public List<Enseignant>? Enseignants { get; set; }
+        public List<Enseignant> Enseignants { get; set; }
 
         public override string ToString()
         {

@@ -16,6 +16,11 @@
                 <label asp-for="Enseignant.Name" class="control-label"></label>
                 <input asp-for="Enseignant.Name" class="form-control" />
                 <span asp-validation-for="Enseignant.Name" class="text-danger"></span>
+
+                <label asp-for="Enseignant.DepartementId" class="control-label"></label>
+                <select asp-for="Enseignant.DepartementId" asp-items="Model.Departements">
+                    <!-- <option value="@Model.Enseignant.DepartementId">@Model.Enseignant.DepartementId</option> -->
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -26,6 +31,61 @@
 
 <div>
     <a asp-page="./Index">Back to List</a>
+</div>
+<div>
+    <h4>Laboratoires</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DepartementLaboratoires[0].Name)
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.DepartementLaboratoires != null)
+            {
+                @foreach (var item in Model.DepartementLaboratoires)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            <a asp-page="../Laboratoires/Edit" asp-route-id="@item.LaboratoireId">Edit</a> |
+                            <a asp-page="../Laboratoires/Details" asp-route-id="@item.LaboratoireId">Details</a> |
+                            <a asp-page="../Laboratoires/Delete" asp-route-id="@item.LaboratoireId">Delete</a>
+                        </td>
+                        <td>
+                            @if (Model.AttachedLaboratoires.Contains(item))
+                            {
+                                <form 
+                                    method="post"
+                                    asp-page-handler="DetachLaboratoire"
+                                    asp-route-enseignantId="@Model.Enseignant.EnseignantId" 
+                                    asp-route-laboratoireId="@item.LaboratoireId">
+                                    <button>remove</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <form 
+                                    method="post"
+                                    asp-page-handler="AttachLaboratoire"
+                                    asp-route-enseignantId="@Model.Enseignant.EnseignantId" 
+                                    asp-route-laboratoireId="@item.LaboratoireId">
+                                    <button>add</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }   
+            }
+        </tbody>
+    </table>
 </div>
 
 @section Scripts {

@@ -36,7 +36,7 @@ namespace SGRM.Pages.Directeurs
 
             Context.Directeurs.Add(Directeur);
             await Context.SaveChangesAsync();
-
+            ViewData["NotificationMessage"] = "Directeur successfully created";
             return RedirectToPage("./Index");
         }
     }

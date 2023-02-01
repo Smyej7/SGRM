@@ -9,7 +9,7 @@
         public int? DepartementId { get; set; }
         public Departement? Departement { get; set; }
 
-        public string? IdentityUserId { get; set; }
+        public string? IdentityUserId { get; set; } //modify later to notNull
 
         public override string ToString()
         {

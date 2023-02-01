@@ -84,6 +84,46 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Fournisseurs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91cm5pc3NldXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Fournisseurs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91cm5pc3NldXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Fournisseurs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91cm5pc3NldXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Fournisseurs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91cm5pc3NldXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Fournisseurs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm91cm5pc3NldXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Imprimantes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wcmltYW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Imprimantes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wcmltYW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Imprimantes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wcmltYW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Imprimantes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wcmltYW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Imprimantes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1wcmltYW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,8 +148,88 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFib3JhdG9pcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Livraisons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGl2cmFpc29uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Livraisons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGl2cmFpc29uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Livraisons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGl2cmFpc29uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Livraisons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGl2cmFpc29uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Livraisons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGl2cmFpc29uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ordinateurs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5hdGV1cnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ordinateurs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5hdGV1cnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ordinateurs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5hdGV1cnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ordinateurs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5hdGV1cnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ordinateurs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5hdGV1cnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Pannes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFubmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Pannes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFubmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Pannes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFubmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Pannes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFubmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Pannes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFubmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ressources/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzc291cmNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ressources/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzc291cmNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ressources/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzc291cmNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ressources/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzc291cmNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Ressources/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzc291cmNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Shared/_LoginPartial.cshtml]
@@ -118,6 +238,46 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypePannes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVBhbm5lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypePannes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVBhbm5lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypePannes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVBhbm5lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypePannes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVBhbm5lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypePannes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVBhbm5lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypeRessources/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVJlc3NvdXJjZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypeRessources/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVJlc3NvdXJjZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypeRessources/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVJlc3NvdXJjZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypeRessources/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVJlc3NvdXJjZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/TypeRessources/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZVJlc3NvdXJjZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DCNTD/Documents/4annee/Genie Logiciel/TPs/Systeme de gestion de ressources materielles/finalApp/SGRM/Pages/_ViewImports.cshtml]

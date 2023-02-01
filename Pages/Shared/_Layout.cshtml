@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -19,21 +21,117 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Departements/Index">Departements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Directeurs/Index">Directeurs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Enseignants/Index">Enseignants</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Laboratoires/Index">Laboratoires</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Departement(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Departements/Index">Departements</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Directeur(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Directeurs/Index">Directeurs</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Enseignant(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Enseignants/Index">Enseignants</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Laboratoire(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Laboratoires/Index">Laboratoires</a>
+                                </li>   
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Fournisseur(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Fournisseurs/Index">Fournisseurs</a>
+                                </li>   
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                           User, new Ressource(),
+                           RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Ressources/Index">Ressources</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Imprimante(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Imprimantes/Index">Imprimantes</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Ordinateur(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Ordinateurs/Index">Ordinateurs</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Livraison(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Livraisons/Index">Livraisons</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new Panne(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Pannes/Index">Pannes</a>
+                                </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new TypePanne(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/TypePannes/Index">Type Pannes</a>
+                            </li>
+                            }
+
+                            @if ((await AuthorizationService.AuthorizeAsync(
+                               User, new TypeRessource(),
+                               RecordOperations.List)).Succeeded)
+                            {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/TypeRessources/Index">Type Ressources</a>
+                            </li>
+                            }
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -42,6 +140,16 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+
+            @*<p style="">infos : @ViewData["RequestMethod"] | @ViewData["ResponseStatusCode"]</p>*@
+
+            @if (@ViewData["NotificationMessage"] != null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @ViewData["NotificationMessage"]
+                </div>
+            }
+
             @RenderBody()
         </main>
     </div>

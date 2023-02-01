@@ -64,7 +64,7 @@ namespace SGRM.Pages.Directeurs
 
             Context.Directeurs.Remove(directeur);
             await Context.SaveChangesAsync();
-
+            ViewData["NotificationMessage"] = "Directeur successfully deleted";
             return RedirectToPage("./Index");
         }
     }

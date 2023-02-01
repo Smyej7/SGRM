@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace SGRM.Pages.Laboratoires
 {
@@ -48,11 +49,18 @@ namespace SGRM.Pages.Laboratoires
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync(int id)
         {
+            Console.WriteLine($"ModelState.IsValid : {ModelState.IsValid}");
+            IEnumerable<ModelError> errors = ModelState.Values.SelectMany(v => v.Errors);
+            foreach (ModelError item in errors)
+            {
+                Console.WriteLine(item.ErrorMessage);
+            }
+            /*
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-
+            */
             // Fetch Contact from DB to get OwnerID.
             var laboratoire = await Context
                 .Laboratoires.AsNoTracking()

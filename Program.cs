@@ -2,6 +2,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SGRM.Data;
 using Microsoft.AspNetCore.Authorization;
+using SGRM.Authorization.Role_Responsable;
+using SGRM.Authorization.Role_Directeur;
+using SGRM.Authorization.Role_PersonnelDepartement;
+using SGRM.Authorization.Role_ServiceMaintenance;
 //using ContactManager.Authorization;
 
 #region snippet3
@@ -34,18 +38,82 @@ builder.Services.AddAuthorization(options =>
 });
 #endregion
 
-/*
+#region authorisations
 // Authorization handlers.
-builder.Services.AddScoped<IAuthorizationHandler,
-                      ContactIsOwnerAuthorizationHandler>();
-
+#region Responsable authorisations
 builder.Services.AddSingleton<IAuthorizationHandler,
-                      ContactAdministratorsAuthorizationHandler>();
-
+                      DepartementResponsablesAuthorizationHandler>();
 builder.Services.AddSingleton<IAuthorizationHandler,
-                      ContactManagerAuthorizationHandler>();
+                      DirecteurResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      EnseignantResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      FournisseurResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      ImprimanteResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      LaboratoireResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      LivraisonResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      OrdinateurResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      PanneResopnsablesAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      RessourceResopnsablesAuthorizationHandler>();
+#endregion
+#region Directeur authorisations
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      DepartementDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      DirecteurDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      EnseignantDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      FournisseurDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      ImprimanteDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      LaboratoireDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      LivraisonDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      OrdinateurDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      PanneDirecteursAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      RessourceDirecteursAuthorizationHandler>();
+#endregion
+#region PersonnelDepartement authorisations
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      DepartementPersonnelDepartementsAuthorizationHandler>();
+/*
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      DirecteurPersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      EnseignantPersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      FournisseurPersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      ImprimantePersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      LaboratoirePersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      LivraisonPersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      OrdinateurPersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      PannePersonnelDepartementsAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      RessourcePersonnelDepartementsAuthorizationHandler>();
 */
-
+#endregion
+#region Maintenance authorisations
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      DepartementMaintenancesAuthorizationHandler>();
+/*
+*/
+#endregion
 var app = builder.Build();
 
 // Configure the test account (view in ressources)
@@ -62,14 +130,7 @@ using (var scope = app.Services.CreateScope())
     var testUserPw = "Passw0rd!";
     await SeedData.Initialize(services, testUserPw);
 }
-/*
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
 
-    SeedData.Initialize(services);
-}
-*/
 #endregion
 
 # region last_region
@@ -97,4 +158,5 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+#endregion
 #endregion

@@ -7,6 +7,8 @@
         public string Name { get; set; }
 
         public Directeur? Directeur { get; set; }
+        public List<PersonnelDepartement>? PersonnelDepartements { get; set; }
+        public List<Maintenance>? Maintenances { get; set; }
         public List<Enseignant>? Enseignants { get; set; }
         public List<Laboratoire>? Laboratoires { get; set; }
 
